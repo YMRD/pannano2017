@@ -1,83 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <title>Pannano Proceedings</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/site.css" />
-  </head>
-  <body onload="main.init();">
-    <div id="splash" class="splash"><div class="loader"></div><span>Loading...</span></div>
-    <header class="header loading"> 
-        <h1> Pannano </h1>
-    </header>
-    <main class="container-fluid loading" id="container">
-        <div class="modal fade" id="paper-modal" tabindex="-1" role="dialog" aria-labelledby="paper-modal-label" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="paper-modal-label">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Open</button>
-                </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>Pannano Proceedings</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body onload="main.init();">
+  <div id="splash" class="splash">
+    <div class="loader"></div>
+    <span>Loading...</span>
+  </div>
+  <header class="header loading">
+    <h1> Pannano </h1>
+  </header>
+  <main class="container-fluid loading" id="container">
+    <div class="modal fade" id="paper-modal" tabindex="-1" role="dialog" aria-labelledby="paper-modal-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="paper-modal-label">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Open</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="container-fluid d-flex flex-column papers">
+      <ul class="nav nav-pills nav-justified" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="pill" href="#title" role="tab">Title</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#author" role="tab">Author</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#theme" role="tab">Theme</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="title" role="tabpanel">
+          <div class="d-flex flex-column">
+            <div class="form-group">
+              <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
+            </div>
+            <div class="list-group" data-target='' data-type='title'></div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="author" role="tabpanel">
+          <div class="d-flex flex-row">
+            <div class="split-panel">
+              <div class="form-group">
+                <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
+              </div>
+              <div class="list-group" data-target='' data-type='author'></div>
+            </div>
+            <div class="split-panel">
+              <div class="list-group" data-target='' data-type=''></div>
             </div>
           </div>
         </div>
-        <section class="container-fluid papers">
-          <ul class="nav nav-pills nav-justified" role="tablist">
-            <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#title" role="tab">Title</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#author" role="tab">Author</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#theme" role="tab">Theme</a></li>
-          </ul>
-          <!-- Tab panes -->
-          <div class="tab-content">
-              <div class="tab-pane fade show active" id="title" role="tabpanel">
-                  <div class="form-group">
-                      <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-                    </div>
-                  <div class="list-group" data-target='' data-type='title'></div>
+        <div class="tab-pane fade" id="theme" role="tabpanel">
+          <div class="d-flex flex-row">
+            <div class="split-panel">
+              <div class="form-group">
+                <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
               </div>
-              <div class="tab-pane fade" id="author" role="tabpanel">
-                  <div class="split-panel">
-                    <div class="form-group">
-                      <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-                    </div>
-                    <div class="list-group" data-target='' data-type='author'></div>
-                  </div>
-                  <div class="split-panel">
-                    <div class="list-group" data-target='' data-type=''></div>
-                  </div>
-              </div>
-              <div class="tab-pane fade" id="theme" role="tabpanel">
-                <div class="split-panel">
-                  <div class="form-group">
-                    <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-                  </div>
-                  <div class="list-group" data-target='' data-type='area'></div>
-                </div>
-                <div class="split-panel">
-                  <div class="list-group" data-target='' data-type=''></div>
-                </div>
-              </div>
+              <div class="list-group" data-target='' data-type='area'></div>
+            </div>
+            <div class="split-panel">
+              <div class="list-group" data-target='' data-type=''></div>
+            </div>
           </div>
-        </section>
-    </main>
-    <footer class="footer loading">
-        &copy; All Rights Reserved
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script src="js/main.min.js" ></script>
-  </body>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer loading">
+    &copy; All Rights Reserved
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+    crossorigin="anonymous"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

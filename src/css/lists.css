@@ -1,0 +1,21 @@
+div.split-panel {
+    flex: 1 1 50%;
+}
+
+div.list-group {
+    /*flex: 1 1 500px;*/
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+div.list-group button {
+    cursor: pointer;
+}
+
+div.list-group button:nth-child(even) {
+    background: #CECECE;
+}
+
+div.form-group {
+    flex: 0 0 auto;
+}
