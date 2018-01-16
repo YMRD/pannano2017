@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header.header {
+    background: blue;
+    flex: 0 0 auto;
+    display:none;
+    padding: 0.5em;
+}
+
+main {
+    position: relative;
+    background: yellow;
+    flex: 1 1 auto;
+    vertical-align: middle;
+    background-position: center;
+    /*display: flex;*/
+    display:none;
+    justify-content: center;
+    align-items: stretch;
+}
+
+footer.footer {
+    flex: 0 0 auto;
+    display:none;
+    background: gray;
+}
+
+header, footer, main {
+    transition:  opacity .15s linear;
+}
+
+section.papers {
+    margin: 1.2em;
+    flex: 1 1 auto;
+    border-radius: 5px;
+    background: white;
+}
+
+div.list-group {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+div.form-group {
+    flex: 0 0 auto;
+}
+
+div.tab-pane { margin: 0.8em 0}
+
+div.tab-pane.active {
+    display:flex;
+    flex-flow: column nowrap;
+}

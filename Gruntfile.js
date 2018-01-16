@@ -7,12 +7,27 @@ module.exports = function(grunt) {
             dist: ['dist'],
         },
         jshint: {
-            all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
+            all: ['Gruntfile.js', 'src/js/*.js', 'test/**/*.js']
+        },
+        jasmine: {
+            options: {
+                specs: 'test/spec/**/*Spec.js',
+                host:"http://localhost:9002/",
+                //helpers: 'test/helper/**/*Helper.js',
+                vendor: [
+                    'https://code.jquery.com/jquery-3.2.1.min.js',
+                    'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js',
+                    'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'
+                ]
+            },
+            test: {
+              src: 'src/js/*.js',
+            },
         },
         uglify: {
             scripts: {
               files: {
-                'dist/js/main.min.js': ['src/**/*.js']
+                'dist/js/main.min.js': ['src/js/*.js']
               }
             }
         },
@@ -23,12 +38,28 @@ module.exports = function(grunt) {
             },
             target: {
               files: {
-                'dist/css/site.css': ['css/*.css']
+                'dist/css/site.css': ['src/**/*.css']
               }
             }
         },
+        connect:{
+            options :{
+                port: 9002,
+                base:["."]
+            },
+            test:{ },
+            bdd:{ options:{ keepalive:true } }
+        },
         copy:{
-            main:{expand: true, src: ['index.html'], dest: 'dist/', filter: 'isFile'},
+            main:{expand: true, cwd:'src/', src: ['index.html'], dest: 'dist/', filte: 'isFile'},
+            images:{expand: true, src: ['src/img/**.*'], dest: 'dist/', },
+        },
+        watch: {
+            scripts: { files: 'src/js/*.js', tasks: ['jshint', 'uglify'], },
+            specs: { files: 'test/**/*.js', tasks: ['jasmine:test:build'], },
+            css: { files: 'src/css/*.css', tasks: ['cssmin'], },
+            html: { files: 'src/index.html', tasks: ['copy:main'], },
+            images: { files: 'src/img/**/*.*', tasks: ['copy:images'], }
         }
     });
   
@@ -36,10 +67,14 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-watch');
   
     // Default task(s).
     grunt.registerTask('default', ['jshint']);
-    grunt.registerTask('build', ['clean', 'jshint', 'uglify', 'cssmin', 'copy']);
+    grunt.registerTask('bdd', ['jasmine:test:build','connect:bdd']);
+    grunt.registerTask('build', ['clean', 'jshint', /*'connect:test', 'jasmine',*/ 'uglify', 'cssmin', 'copy']);
 };
