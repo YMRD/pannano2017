@@ -2,7 +2,7 @@ var list = (function(){
 
     var init = function(){
         var self = this, getter;
-        $("div.list-group[data-type]").each(function(){
+        $("div.list-group").each(function(){
             var type, target, $elem = $(this), dados;
             type = $elem.data("type") || "";
             target = $elem.data("target") || "";
@@ -15,44 +15,58 @@ var list = (function(){
                     console.log("Não encontrado o tipo: "+type);
                 }
                 _carregar($elem, dados);
-                $elem.on("click", "button", _clicar);
+            } else {
+                $elem.parent().hide();
             }
+            $elem.on("click", "button", _clicar);
         });
     },
 
     _carregar = function($elem, data){
-        var i, content = "";
+        var i, content = [], $btn;
 
         if ($.isArray(data)){
             for (i = 0; i < data.length; i++){
-                content += "<button type=\"button\" class=\"list-group-item list-group-item-action\">"+
+                $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action\">"+
                             data[i]+
-                        "</button>";
+                        "</button>");
+                $btn.data("paper", data[i]);
+                content.push($btn);
             }
         } else if ($.isPlainObject(data)){
             for (var prop in data){
-                content += "<button type=\"button\" class=\"list-group-item list-group-item-action\">"+
+                $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action\">"+
                     prop+
-                "</button>";
+                "</button>");
+                $btn.data("trabalhos", data[prop]);
+                content.push($btn);
             }
         }
-        $elem.append(content);
+        $elem.empty().append(content);
     },
 
-    _clicar = function(){
-        var self = $(this),
-            target = self.parent().data("target");
+    _clicar = function(event){
+        var $sublist,
+            dados,
+            target = $(this).parent().data("target");
 
         if(target === "modal"){
             $('#modal').modal("show");
-        } else {
-            
+        } else if(target === "sublist") {
+            $sublist = $(this).closest("div.tab-pane").find("div.list-group.sublist");
+            dados = $(event.target).data("trabalhos");
+            _carregar($sublist, dados);
+            $sublist.parent().show();
         }
+    },
 
+    setData = function($sublist, dados){
+        var self = this;
     };
 
     return {
-        init:init
+        init:init,
+        setData:setData
     };
 
 })();

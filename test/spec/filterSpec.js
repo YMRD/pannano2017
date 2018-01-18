@@ -4,12 +4,12 @@ describe("Filter Spec", function(){
         $("<div id='fixtures'></div>").appendTo("body");
         
         $("#fixtures").append("<div class='tab-pane'>"+
-            "<input id='filter1' class='filter' />"+
+            "<div><input id='filter1' class='filter' /></div>"+
             "<div class='list-group' id='list1'>"+
                 "<button class='list-group-item' id='btn1'>Teste</button>"+
                 "<button class='list-group-item' id='btn2'>Outro</button>"+
                 "<button class='list-group-item' id='btn3'>Outra</button>"+
-            "</div><input id='filter2' class='filter' />"+
+            "</div><div><input id='filter2' class='filter' /></div>"+
         "</div>");
         filter.init();
     });

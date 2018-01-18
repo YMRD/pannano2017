@@ -1,13 +1,15 @@
 describe("Main Spec", function(){
     
-    var spyData, spyList, spyFilter;
+    var spyData, spyList, spyFilter, spyModal;
 
     beforeEach(function(){
         $("<div id='fixtures'></div>").appendTo("body");
         spyData = spyOn(data, "init");
         spyList = spyOn(list, "init");
         spyFilter = spyOn(filter, "init");
+        spyModal = spyOn(modal, "init").and.callThrough();
         $("#fixtures").append("<div id='splash'></div>"+
+        "<div id='modal' class='modal'></modal>"+
         "<main>"+
             "<div class='list-group'></div>"+
             "<div class='list-group'></div>"+
@@ -34,6 +36,9 @@ describe("Main Spec", function(){
             expect(spyFilter).toHaveBeenCalled();
         });
 
+        it("deve encontrar o modal e inicializar ele (deixando escondido", function(){
+            expect(spyModal).toHaveBeenCalled();
+        });
 
         it("deve remover o splash e mostrar o conteúdo após processamento acabar.", function(){
             expect($("#splash").length).toBe(0);
