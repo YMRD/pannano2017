@@ -16,8 +16,8 @@ module.exports = function(grunt) {
                 //helpers: 'test/helper/**/*Helper.js',
                 vendor: [
                     'https://code.jquery.com/jquery-3.2.1.min.js',
-                    'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js',
-                    'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'
+                    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js',
+                    'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js'
                 ]
             },
             test: {

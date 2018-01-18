@@ -40,6 +40,14 @@ var list = (function(){
     },
 
     _clicar = function(){
+        var self = $(this),
+            target = self.parent().data("target");
+
+        if(target === "modal"){
+            $('#modal').modal("show");
+        } else {
+            
+        }
 
     };
 
