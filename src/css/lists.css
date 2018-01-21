@@ -1,5 +1,5 @@
 div.split-panel {
-    flex: 0 0 50%;
+    flex: 50%;
     margin: 0 0.3em;
 }
 

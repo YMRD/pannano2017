@@ -8,6 +8,7 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
     crossorigin="anonymous" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
   <link rel="stylesheet" href="css/site.css" />
 </head>
 
@@ -22,7 +23,7 @@
 
   <main class="container-fluid loading" id="container">
     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="paper-modal-label" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="paper-modal-label">Paper Details</h5>
@@ -38,8 +39,8 @@
             <p id="paper-area"></p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Download PDF</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i>Close</button>
+            <button type="button" class="btn btn-primary"><i class="fas fa-file-pdf"></i>Download PDF</button>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ var list = (function(){
 
         if ($.isArray(data)){
             for (i = 0; i < data.length; i++){
-                $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action\">"+
+                $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action\" >"+
                             data[i]+
                         "</button>");
                 $btn.data("paper", data[i]);
@@ -51,6 +51,14 @@ var list = (function(){
             target = $(this).parent().data("target");
 
         if(target === "modal"){
+            var title = $(this).data("paper"),
+                paper = data.getPaper(title);
+            if(paper){
+                $("#paper-title").text(paper.title);
+                $("#paper-authors").text(paper.authors);
+                $("#paper-area").text(paper.area);
+            }
+    
             $('#modal').modal("show");
         } else if(target === "sublist") {
             $sublist = $(this).closest("div.tab-pane").find("div.list-group.sublist");

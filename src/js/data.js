@@ -40,7 +40,7 @@ var data = (function(){
     },
 
     getPaper = function(title){
-
+        return data[title][0] || {};
     },
 
     _addMap = function(map, key, value){
