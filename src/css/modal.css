@@ -1,0 +1,7 @@
+div.modal-dialog {
+    max-width: 90%;
+}
+
+button svg {
+    margin-right: 0.5em;
+}

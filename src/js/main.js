@@ -3,6 +3,8 @@ var main = (function(){
     var init = function(){
         // Initializing data
         data.init();
+        // Initializing modal
+        modal.init();
         // Initializing lists
         list.init();
         // Initializing filters

@@ -5,7 +5,7 @@ var filter = (function(){
         self = this;
 
         $filters.each(function(){
-            var $list = $(this).closest("div.tab-pane").find("div.list-group:eq(0)");
+            var $list = $(this).parent().parent().find("div.list-group:eq(0)");
             if($list){
                 $(this).data("list", $list);
             }
