@@ -44,7 +44,7 @@ describe("List Spec", function(){
             list.init();
             expect(spyData).not.toHaveBeenCalled();
         });
-
+ 
         it("deve criar um botão para cada item dos dados retornados, esses botões devem ter eventos de clique associados.", function(){
             expect($("#teste button").length).toEqual(237);
             expect($("#teste2 button").length).toEqual(718);
@@ -72,7 +72,7 @@ describe("List Spec", function(){
         it("deve mostrar e montar a sublista caso o data-target seja 'sublista'", function(){
             var $btn = $("#teste2 button:eq(0)").click();
             expect($("#testeSub").is(":visible")).toBe(true);
-            expect($("#testeSub button").length).toEqual(1);
+            expect($("#testeSub button").length).toEqual(3);
         });
 
     });

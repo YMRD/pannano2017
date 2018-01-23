@@ -25,9 +25,6 @@ module.exports = function(grunt) {
             },
         },
         uglify: {
-            options: {
-                beautify: true
-            },
             scripts: {
               files: {
                 'dist/js/main.min.js': ['src/js/*.js']
@@ -89,5 +86,6 @@ module.exports = function(grunt) {
     // Default task(s).
     grunt.registerTask('default', ['jshint']);
     grunt.registerTask('bdd', ['jasmine:test:build','connect:bdd']);
-    grunt.registerTask('build', ['clean', 'jshint', /*'connect:test', 'jasmine',*/ 'concat', 'cssmin', 'copy']);
+    grunt.registerTask('build-dev', ['clean', 'jshint', 'concat', 'cssmin', 'copy']);
+    grunt.registerTask('build', ['clean', 'jshint', 'connect:test', 'jasmine', 'uglify', 'cssmin', 'copy']);
 };
