@@ -57,8 +57,8 @@ var list = (function(){
                 $("#paper-title").text(paper.title);
                 $("#paper-authors").text(paper.authors);
                 $("#paper-area").text(paper.area);
+                $("#paper-link").attr("href", paper.link);
             }
-    
             $('#modal').modal("show");
         } else if(target === "sublist") {
             $sublist = $(this).closest("div.tab-pane").find("div.list-group.sublist");
