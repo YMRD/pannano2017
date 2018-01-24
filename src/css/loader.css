@@ -30,10 +30,10 @@
     100% { transform: rotate(360deg); }
 }
 
-header.header.loaded,
 footer.footer.loaded {
     display:block
 }
+header.header.loaded,
 main.loaded {
     display:flex;
 }

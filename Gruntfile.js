@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         },
         copy:{
             main:{expand: true, cwd:'src/', src: ['index.html'], dest: 'dist/', filte: 'isFile'},
-            images:{expand: true, src: ['src/img/**.*'], dest: 'dist/', },
+            images:{expand: true, cwd:'src/', src: ['css/img/**.*'], dest: 'dist/', },
         },
         concat: {
             options: {
@@ -86,6 +86,6 @@ module.exports = function(grunt) {
     // Default task(s).
     grunt.registerTask('default', ['jshint']);
     grunt.registerTask('bdd', ['jasmine:test:build','connect:bdd']);
-    grunt.registerTask('build-dev', ['clean', 'jshint', 'concat', 'cssmin', 'copy']);
+    grunt.registerTask('dev', ['clean', 'jshint', 'concat', 'cssmin', 'copy']);
     grunt.registerTask('build', ['clean', 'jshint', 'connect:test', 'jasmine', 'uglify', 'cssmin', 'copy']);
 };

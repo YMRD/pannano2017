@@ -20,7 +20,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "grunt build-dev && node server.js",
     "start": "grunt build && node server.js"
   },
   "repository": {

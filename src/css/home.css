@@ -8,15 +8,32 @@ body {
 }
 
 header.header {
-    background: blue;
     flex: 0 0 auto;
     display:none;
     padding: 0.5em;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    font-weight: bold;
+    color: #CECECE;
+}
+
+header.header h1 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+header.header p {
+    font-size: 150%;
 }
 
 main {
     position: relative;
-    background: yellow;
+    background:#CCC;
     flex: 1 1 auto;
     vertical-align: middle;
     background-position: center;
@@ -29,7 +46,9 @@ main {
 footer.footer {
     flex: 0 0 auto;
     display:none;
-    background: gray;
+    background: black;
+    color: white;
+    font-weight: bold;
 }
 
 header, footer, main {
