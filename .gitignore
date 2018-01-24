@@ -1,5 +1,4 @@
 # Node stuff
 node_modules/
 .vscode/
-dist/
 .grunt/
