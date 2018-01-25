@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         clean:{
-            dist: ['dist'],
+            docs: ['docs'],
         },
         jshint: {
             all: ['Gruntfile.js', 'src/js/*.js', 'test/**/*.js']
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         uglify: {
             scripts: {
               files: {
-                'dist/js/main.min.js': ['src/js/*.js']
+                'docs/js/main.min.js': ['src/js/*.js']
               }
             }
         },
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             },
             target: {
               files: {
-                'dist/css/site.css': ['src/**/*.css']
+                'docs/css/site.css': ['src/**/*.css']
               }
             }
         },
@@ -51,16 +51,16 @@ module.exports = function(grunt) {
             bdd:{ options:{ keepalive:true } }
         },
         copy:{
-            main:{expand: true, cwd:'src/', src: ['index.html'], dest: 'dist/', filte: 'isFile'},
-            images:{expand: true, cwd:'src/', src: ['css/img/**.*'], dest: 'dist/', },
+            main:{expand: true, cwd:'src/', src: ['index.html'], dest: 'docs/', filte: 'isFile'},
+            images:{expand: true, cwd:'src/', src: ['css/img/**.*'], dest: 'docs/', },
         },
         concat: {
             options: {
               separator: ';',
             },
-            dist: {
+            docs: {
               src: ['src/js/*.js'],
-              dest: 'dist/js/main.min.js',
+              dest: 'docs/js/main.min.js',
             },
         },
         watch: {
