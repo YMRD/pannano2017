@@ -6,7 +6,6 @@ div.split-panel {
 div.list-group {
     overflow-y: auto;
     display: block;
-    max-height: 350px;
 }
 
 div.list-group button {
