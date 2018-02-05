@@ -2,11 +2,6 @@ html, body {
     height: 100%;
 }
 
-body {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
 header.header {
     flex: 0 0 auto;
     display:none;
@@ -39,7 +34,7 @@ header.header p {
 
 main {
     position: relative;
-    background:#CCC;
+    background:white;
     flex: 1 1 auto;
     vertical-align: middle;
     background-position: center;

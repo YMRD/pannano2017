@@ -24,7 +24,8 @@ var data = (function(){
                 author = authorArr[j].trim();
                 _addMap(authors, author, current.title);
             }
-        }
+		}
+		
     },
 
     getByArea = function(){

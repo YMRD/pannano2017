@@ -42,6 +42,16 @@ var list = (function(){
                 content.push($btn);
             }
         }
+        content.sort(function(a, b){
+            if(a.text() < b.text()){
+                return -1;
+            } else if (a.text() > b.text()) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+
         $elem.empty().append(content);
     },
 
@@ -62,7 +72,7 @@ var list = (function(){
             $('#modal').modal("show");
         } else if(target === "sublist") {
             $sublist = $(this).closest("div.tab-pane").find("div.list-group.sublist");
-            dados = $(event.target).data("trabalhos");
+            dados = event.target.tagName === "BUTTON" ? $(event.target).data("trabalhos") : $(event.target).parent().data("trabalhos");
             _carregar($sublist, dados);
             $sublist.parent().show();
         }
