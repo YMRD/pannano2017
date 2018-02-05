@@ -22,6 +22,11 @@ header.header {
     color: #CECECE;
 }
 
+header.header section {
+    flex: 1;
+    text-align: center;
+}
+
 header.header h1 {
     font-family: "Montserrat";
     text-transform: uppercase;
@@ -29,6 +34,7 @@ header.header h1 {
 
 header.header p {
     font-size: 150%;
+    flex: 1 1 0;
 }
 
 main {
@@ -49,6 +55,7 @@ footer.footer {
     background: black;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 header, footer, main {
@@ -60,6 +67,7 @@ section.papers {
     flex: 1 1 0;
     border-radius: 5px;
     background: white;
+    overflow: hidden;
 }
 
 div.tab-pane { margin: 0.8em 0}
