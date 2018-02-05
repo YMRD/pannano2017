@@ -28,7 +28,7 @@ var list = (function(){
         if ($.isArray(data)){
             for (i = 0; i < data.length; i++){
                 $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action\" >"+
-                            data[i]+
+                        "<span>"+data[i]+"</span>"+
                         "</button>");
                 $btn.data("paper", data[i]);
                 content.push($btn);
@@ -36,7 +36,7 @@ var list = (function(){
         } else if ($.isPlainObject(data)){
             for (var prop in data){
                 $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action\">"+
-                    prop+
+                    "<span>"+prop+"</span>"+
                 "</button>");
                 $btn.data("trabalhos", data[prop]);
                 content.push($btn);
