@@ -3,7 +3,6 @@ html, body {
 }
 
 header.header {
-    flex: 0;
     display:none;
     padding: 0.5em;
     flex-flow: row wrap;
@@ -58,7 +57,8 @@ section.papers {
 div.tab-pane { margin: 0.8em 0}
 
 div.tab-content {
-    flex: 1;    
+    flex: 1;
+    overflow: auto;
 }
 
 div.flex-row {
