@@ -2,6 +2,6 @@ div.modal-dialog {
     max-width: 90%;
 }
 
-button svg {
+svg.fa-file-pdf {
     margin-right: 0.5em;
 }
