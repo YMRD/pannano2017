@@ -2182,6 +2182,123 @@ var data = (function(){
 			"authors": "Naomi Gevaerd De Souza;Akshay Chandrashekan Parenky;Hyeok Choi",
 			"template": 0,
 			"link": null
+		},
+		{
+			"code": "BTDC",
+			"area": "Sustainability",
+			"type": "POSTER",
+			"title": "Recycling of plastic cups and packaging of EPS to obtain nanocomposite with nanoclay and plaster",
+			"authors": "Suellen Signer Bartolomei;Messias Dos Santos Machado;Julyana Galvão Santana;Esperidiana A. B. Moura;Hélio Wiebeck",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1yLfct6T2etMh_wtk6do3lgC-DNGm2Z7f/view"
+		},
+		{
+			"code": "BVBH",
+			"area": "Biological-nano Interactions",
+			"type": "POSTER",
+			"title": "Poly(beta-amino) ester physicochemical properties determine the transfection efficiency in ARPE-19 cell line",
+			"authors": "Guilherme Capiraço Campese;Bruna Beatriz Soldera;Marcelo Bispo de Jesus",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1OoLkMM2VyZ1uce-bdroImKOtRmIqY0Ul/view"
+		},
+		{
+			"code": "BVDQ",
+			"area": "Nanomanufacturing",
+			"type": "POSTER",
+			"title": "Morphological characterization of N-doped TiO2 thin films",
+			"authors": "Eduardo Cesar De Oliveira;Rodrigo Teixeira Bento;Olandir Vercino Correa;Marina Fuser Pillis;Margarida Szurkalo",
+			"template": 0,
+			"link": ""
+		},
+		{
+			"code": "BS22",
+			"area": "Nanomanufacturing",
+			"type": "POSTER",
+			"title": "BIODEGRADABLE POLYMER BLENDS REINFORCED WITH BIO-HYDROXYAPATITE NANOPARTICLE - PREPARATION AND CHARACTERIZATION",
+			"authors": "Pedro Rodrigo Reis;Julyana Galvão Santana;Rene R. Oliveira;Vijaya k. Rangari;Esperidiana A. B. Moura",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1EnRj9iv_pPk1RgChD_chqNwEY2zeBlzc/view"
+		},
+		{
+			"code": "BT6P",
+			"area": "Education",
+			"type": "POSTER",
+			"title": "Environmental nanotechnology and graduate students: a theoretical–practical approach to study the potential impacts of nanomaterials on human health and the environment",
+			"authors": "Nathalie Ferreira Silva de Melo;Leonardo Fernandes Fraceto;Renato Grillo",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1OcAF__90nZLfuQ1Wsw3HrxgLriaHltNr/view"
+		},
+		{
+			"code": "BT6R",
+			"area": "Biological-nano Interactions",
+			"type": "POSTER",
+			"title": "Poloxamer hydrogel containing polymeric nanocapsules: an in vitro skin-membrane permeation study",
+			"authors": "Renato Grillo;Fabiana Vieira DIas;Samyr Machado Querobino;Carlos Alberto-Silva;Leonardo Fernandes Fraceto;Eneida de Paula;Daniele Ribeiro de Araujo",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1qpm9puqWEr2jRunjpdCozwkH2FGvYt2t/view"
+		},
+		{
+			"code": "BTKJ",
+			"area": "Nanomanufacturing",
+			"type": "POSTER",
+			"title": "Gamma radiation assisted reduction of graphene oxide in unoxidized environment",
+			"authors": "Tiago dos Santos Moura;Paula Tiemi Goto;Rafael H L Garcia;Pablo Antonio Vázquez Salvador;Paulo de Souza Santos;Jaqueline Jamara Souza Soares;Lucia Kiyomi Noda;Solange Kazumi Sakata",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1Y8zsDrkcQAazLNikJx_ZRyyiaaoCHO9G/view"
+		},
+		{
+			"code": "BRHT",
+			"area": "Ecological-nano interactions",
+			"type": "POSTER",
+			"title": "Antibacterial mechanism of ZnO nanoparticles on Escherichia coli: Toxic effect of ZnO nanoparticles in commercial sunscreens",
+			"authors": "Soyoung Baek;SungHee Joo",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1QQfXuDm3G1Zj6ZT4X_XO78GOkVe_l_XY/view"
+		},
+		{
+			"code": "BTAP",
+			"area": "Chemical-nano interactions",
+			"type": "POSTER",
+			"title": "NANOSTRUCTURED SURFACE FOR ABSORPTION OF THE ENVIRONMENTAL ELECTROMAGNETIC NOISE",
+			"authors": "Samuel Machado Leal da Silva;Carlos Luiz Ferreira;Newton Adriano dos Santos Gomes",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1z1qkZW-zHDefrRbnNORshcr5cPCkB-iQ/view"
+		},
+		{
+			"code": "BTCA",
+			"area": "Biological-nano Interactions",
+			"type": "POSTER",
+			"title": "FORMULATION, CHARACTERIZATION AND CYTOTOXICITY OF AÇAÍ OIL (Euterpe oleracea Mart) NANOEMULSION ON BREAST CANCER CELLS IN VITRO",
+			"authors": "Thamara Rodrigues Alexandre;Victor Hugo Sousa Araujo;Ricardo Bentes de Azevedo;Graziella A. Joanitti",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1GrWVftiU2JHR3u1nA0vKDqe4IziCBLS6/view"
+		},
+		{
+			"code": "BSBF",
+			"area": "Nanomanufacturing",
+			"type": "POSTER",
+			"title": "New Gold nanoparticle synthesis",
+			"authors": "Carla Daruich Souza;Maria Elisa Chuery Martins Rostelato;Andreza A. D. C. C. Gonzalez;Beatriz Ribeiro Nogueira;Marc-André Fortin;Pascale Chevallier",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1n9TBAQjM3g_VSNfVz_Vv6ICW3Em0VAKR/view"
+		},
+		{
+			"code": "BRXS",
+			"area": "Chemical-nano interactions",
+			"type": "POSTER",
+			"title": "Removal of Dyes from Wastewater by Magnetic Nanohybrids",
+			"authors": "Helena Augusta Lisboa de Oliveira;Alex Fabiano Cortez Campos;Renata Aquino;Jerome Depeyrot",
+			"template": 0,
+			"link": ""
+		},
+		{
+			"code": "BS2Y",
+			"area": "Chemical-nano interactions",
+			"type": "POSTER",
+			"title": "HYDROPHILIC AND KINETIC PROPERTIES OF NANOCLAY LAPONITE RDS AND POLY(METHACRYLIC ACID) (PMAA) HYDROGEL NANOCOMPOSITES",
+			"authors": "Carlos Roberto Ferreira Junior;Marcia Regina de Moura;Fauze Ahmad Aouada",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1WBSWaMUBSPxYbuoKFGZQDrvQaHlqFbLt/view"
 		}
 	];
 
