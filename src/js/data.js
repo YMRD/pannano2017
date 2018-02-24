@@ -707,7 +707,7 @@ var data = (function(){
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1pqUwRkreGi4aVf5ZUCN2r2cBx6mfj80C/view?usp=drivesdk"
 		},
-		{
+		/*{
 			"code": "BVAA",
 			"area": "Biological-nano Interactions",
 			"type": "POSTER",
@@ -715,7 +715,7 @@ var data = (function(){
 			"authors": "Karina De Oliveira Gonçalves;Letícia Bonfim;Daniel Perez Vieira;Lilia Coronato Courrol",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1PkMDN2xmVmGTjONNf5elOZIVtyauwf2A/view?usp=drivesdk"
-		},
+		},*/
 		{
 			"code": "BRTD",
 			"area": "Nanomanufacturing",
@@ -1616,7 +1616,7 @@ var data = (function(){
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1ci5tjZYcrxiuO3SmDFOzymTCWXS6Rd2a/view?usp=drivesdk"
 		},
-		{
+		/*{
 			"code": "BVDP",
 			"area": "Chemical-nano interactions",
 			"type": "POSTER",
@@ -1624,7 +1624,7 @@ var data = (function(){
 			"authors": "Margarida Szurkalo;Eduardo Cesar De Oliveira;Olandir Vercino Correa;Rodrigo Teixeira Bento;Marina Fuser Pillis",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1CHNhq7XMhBvfRZ8Ybm-Y3TTZWgIgPU-f/view?usp=drivesdk"
-		},
+		},*/
 		{
 			"code": "BRYB",
 			"area": "Chemical-nano interactions",
@@ -2003,7 +2003,7 @@ var data = (function(){
 			"template": 0,
 			"link": "https://drive.google.com/file/d/13Mwj6LzLo8Z9VzX31lMOlfwaad087u1u/view?usp=drivesdk"
 		},
-		{
+		/*{
 			"code": "BTP4",
 			"area": "Nanomanufacturing",
 			"type": "POSTER",
@@ -2011,7 +2011,7 @@ var data = (function(){
 			"authors": "Thenner Silva Rodrigues;Arthur Brucoli Leme De Moura;Felipe Anchieta;Silva;Eduardo G. Candido",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/13mhHrtYbUvi4-OXeRFyedWyjupUVmVIB/view?usp=drivesdk"
-		},
+		},*/
 		{
 			"code": "BS6C",
 			"area": "Biological-nano Interactions",
