@@ -1261,7 +1261,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "ORAL",
 			"title": "Radiation-induced \"one pot\" synthesis for cell therapies",
-			"authors": "Ademar B. Lugao",
+			"authors": "Ademar Benévolo Lugao",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1GYYuE50sNo8lhUPrWdKXA2QdA4NIR0cJ/view?usp=drivesdk"
 		},
@@ -2167,7 +2167,7 @@ var data = (function(){
 		},
 		{
 			"code": "BARB",
-			"area": "INDEFINIDO",
+			"area": "Biological-nano Interactions",
 			"type": "ORAL",
 			"title": "Nanotechnology: Implications, Applications, Sustainability",
 			"authors": "Barbara Karn",
