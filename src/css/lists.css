@@ -12,9 +12,15 @@ div.list-group button {
     cursor: pointer;
 }
 
+/**
 div.list-group button:nth-child(even) {
     background: #CECECE;
+}**/
+
+div.list-group button.alt {
+    background: #CECECE;
 }
+
 
 div.form-group {
     flex: 0 0 auto;

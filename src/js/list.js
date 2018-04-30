@@ -26,32 +26,38 @@ var list = (function(){
         var i, content = [], $btn;
 
         if ($.isArray(data)){
+            data.sort();
             for (i = 0; i < data.length; i++){
-                $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action\" >"+
+                $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action"+(i%2==1 ? " alt" : "")+"\" >"+
                         "<span>"+data[i]+"</span>"+
                         "</button>");
                 $btn.data("paper", data[i]);
                 content.push($btn);
             }
         } else if ($.isPlainObject(data)){
-            for (var prop in data){
-                $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action\">"+
-                    "<span>"+prop+"</span>"+
-                "</button>");
-                $btn.data("trabalhos", data[prop]);
-                content.push($btn);
+            var props = [];
+            if(Object.keys){
+                props = Object.keys(data);
+                props.sort();
+                for (i = 0; i < props.length; i++){
+                    $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action"+(i%2==1 ? " alt" : "")+"\">"+
+                    "<span>"+props[i]+"</span>"+
+                    "</button>");
+                    $btn.data("trabalhos", data[props[i]]);
+                    content.push($btn);
+                }
+            } else {
+                i = 0;
+                for (var prop in data){
+                    $btn = $("<button type=\"button\" class=\"list-group-item list-group-item-action"+(i%2==1 ? " alt" : "")+"\">"+
+                        "<span>"+prop+"</span>"+
+                    "</button>");
+                    $btn.data("trabalhos", data[prop]);
+                    content.push($btn);
+                    i++;
+                }
             }
         }
-        content.sort(function(a, b){
-            if(a.text() < b.text()){
-                return -1;
-            } else if (a.text() > b.text()) {
-                return 1;
-            } else {
-                return 0;
-            }
-        });
-
         $elem.empty().append(content);
     },
 

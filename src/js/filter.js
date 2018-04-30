@@ -18,11 +18,18 @@ var filter = (function(){
         var fator = $elem.val(),
             $list = $elem.data("list");
         if(fator && $list.length) {
+            var i = 0;
             $list.find("button.list-group-item").each(function(){
                 if(_normalizar($(this).text()).indexOf(_normalizar(fator)) !== -1){
                     $(this).show();
+                    if(i % 2 == 0){
+                        $(this).removeClass("alt");
+                    } else {
+                        $(this).addClass("alt");
+                    }
+                    i++;
                 } else {
-                    $(this).hide();
+                    $(this).hide().removeClass("alt");
                 }
             });
         } else if ($list.length){

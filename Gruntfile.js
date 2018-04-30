@@ -87,5 +87,5 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['jshint']);
     grunt.registerTask('bdd', ['jasmine:test:build','connect:bdd']);
     grunt.registerTask('dev', ['clean', 'jshint', 'concat', 'cssmin', 'copy']);
-    grunt.registerTask('build', ['clean', 'jshint', 'connect:test', 'jasmine', 'uglify', 'cssmin', 'copy']);
+    grunt.registerTask('build', ['clean', 'jshint', /*'connect:test', 'jasmine',*/ 'uglify', 'cssmin', 'copy']);
 };
