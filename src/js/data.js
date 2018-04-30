@@ -1,8 +1,9 @@
 var data = (function(){
 
-    var data, area, authors, title,
+    var data, area, authors, title, papers,
  
     init = function(){
+		papers = [];
         data = {};
         area = {};
         authors = {};
@@ -16,14 +17,18 @@ var data = (function(){
 
         for (i = 0; i < _data.length; i++){
             current = _data[i];
-            _addMap(data, current.title, current);
-            title.push(current.title);
-            _addMap(area, current.area, current.title);
-            authorArr = current.authors.split(";");
-            for (j = 0; j < authorArr.length; j++){
-                author = authorArr[j].trim();
-                _addMap(authors, author, current.title);
-            }
+			_addMap(data, current.title, current);
+			if(current.type === "PAPER"){
+				papers.push(current.title);
+			} else {
+				title.push(current.title);
+				_addMap(area, current.area, current.title);
+				authorArr = current.authors.split(";");
+				for (j = 0; j < authorArr.length; j++){
+					author = authorArr[j].trim();
+					_addMap(authors, author, current.title);
+				}
+			}
 		}
 		
     },
@@ -42,14 +47,27 @@ var data = (function(){
 
     getPaper = function(title){
         return data[title][0] || {};
-    },
+	},
+	
+	getByPaper = function(){
+		return papers;
+	},
 
     _addMap = function(map, key, value){
         if(!map[key]) map[key] = [];
         if(map[key].indexOf(value) === -1) map[key].push(value);
     },
 
+
     _data = [
+		{
+			"code": "BTP4",
+			"area": "Nanomanufacturing",
+			"type": "PAPER",
+			"title":"Hardwired for success: Ni supported CeO 2 :Sm 2 O 3 nanowires as a super stable catalyst for ethanol steam reforming",
+			"authors": "Thenner S. Rodrigues;Arthur B. L. de Moura;Felipe A. e Silva;Eduardo G. Candido;Vanderlei S. Bergamaschi;João C. Ferreira;Marcelo Linardi;Fabio C. Fonseca",
+			"link": "https://drive.google.com/file/d/1O0mkeJaAyv2J99kWf2aytmW6ZBXb3tRz/view"
+		},
 		{
 			"code": "BTW4",
 			"area": "Biological-nano Interactions",
@@ -2189,7 +2207,8 @@ var data = (function(){
         init:init,
         getByArea:getByArea,
         getByAuthor:getByAuthor,
-        getByTitle:getByTitle,
+		getByTitle:getByTitle,
+		getByPaper:getByPaper,
         getPaper:getPaper
     };
 
