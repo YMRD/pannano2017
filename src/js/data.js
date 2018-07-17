@@ -61,6 +61,22 @@ var data = (function(){
 
     _data = [
 		{
+			"code": "BVDV",
+			"area": "Biological-nano Interactions",
+			"type": "PAPER",
+			"title": "Radiolabeling of protein-based nanoparticles for biomedical imaging and diagnostics",
+			"authors": "Aryel Heitor Ferreira;Fabio L. N. Marques;Larissa Estessi de Souza;Gustavo H. C. Varca;Gabriela N. Fazolin;Tamara Fucase;Ademar B. Lugão",
+			"link": "https://drive.google.com/file/d/1D_fzJj0LuZm8JknDdIIVfEGRqKIVg8PA/view"
+		},
+		{
+			"code": "BVEG2",
+			"area": "Nanoinformatics and Modeling",
+			"type": "PAPER",
+			"title": "Innovation trajectories: an IPEN´s nanotechnology competence roadmapping to match´s market mechanisms",
+			"authors": "Aline A. Perini;Anderson Z. Freitas",
+			"link": "https://drive.google.com/file/d/1sbzeTudECxXXA7vQzTbbm2chWT-aikeM/view"
+		},
+		{
 			"code": "BVAA",
 			"area": "Biological-nano Interactions",
 			"type": "PAPER",
@@ -2357,6 +2373,24 @@ var data = (function(){
 			"authors": "Carlos Roberto Ferreira Junior;Marcia Regina de Moura;Fauze Ahmad Aouada",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1WBSWaMUBSPxYbuoKFGZQDrvQaHlqFbLt/view"
+		},
+		{
+			"code": "HIGH",
+			"area": "Chemical-nano interactions",
+			"type": "POSTER",
+			"title": "Highly Crystalline Zinc Oxide Nanoparticles for Photodegradation of Acetaminophen in a Micro-packed Bed Reactor",
+			"authors": "Fabiane J. Trindade;Bruno Ramos;Sergio Brochsztain;Eduardo R. Triboni;Tayro Stringari;Ardson S. Vianna Junior;Antonio Carlos S. C. Teixeira",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1QEObB0ndJ4AL38ccNNr1qX1BpZTB3gie/view"
+		},
+		{
+			"code": "ASSO",
+			"area": "Chemical-nano interactions",
+			"type": "POSTER",
+			"title": "Association of Botanical Compounds from Different Plants with Nanotechnology as a Promising System Aiming Pest Control",
+			"authors": "Jhones L. de Oliveira;Estefania V.R. Campos;Tais Germano da Costa;Renata Lima;Jaqueline Franciosi Della Vechia;Sidneia Terezinha Soares;Daniel Junior de Andrade;Kelly Cristina Gonçalves;Ricardo Antonio Polanczyk;Leonardo Fernandes Fraceto",
+			"template": 0,
+			"link": "https://drive.google.com/file/d/1P-KpgCrwS3wWkdje0YR1p2O6LSTlJjeY/view"
 		}
 	];
 
