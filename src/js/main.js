@@ -12,6 +12,15 @@ var main = (function(){
         // Removing splash and showing main content
         $("#splash").remove();
         $("header, footer, main").addClass("loaded");
+        // Listening to page scroll
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 100){  
+                $('header.header, main').addClass("scroll");
+            }
+            else{
+                $('header.header, main').removeClass("scroll");
+            }
+        });
     };
 
     return {

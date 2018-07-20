@@ -4,17 +4,19 @@ html, body {
 
 header.header {
     display:none;
-    padding: 0.5em;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url('img/background.jpg');
+    min-height: 300px;
+    background-image: url('img/pannano-background-2-big.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    font-weight: bold;
-    color: #CECECE;
-    text-align: center;
+    flex-flow: column;
+    justify-content: flex-end;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+header.header.scroll {
+    min-height: 260px;
 }
 
 header.header h1 {
@@ -32,10 +34,15 @@ main {
     background:white;
     flex: 1 1 500px;
     /*display: flex;*/
+    margin-top: 300px;
     display:none;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: stretch;
+}
+
+main.scroll {
+    margin-top: 250px;
 }
 
 footer.footer {

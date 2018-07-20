@@ -2376,7 +2376,7 @@ var data = (function(){
 		},
 		{
 			"code": "HIGH",
-			"area": "Chemical-nano interactions",
+			"area": "Biological-nano interactions",
 			"type": "POSTER",
 			"title": "Highly Crystalline Zinc Oxide Nanoparticles for Photodegradation of Acetaminophen in a Micro-packed Bed Reactor",
 			"authors": "Fabiane J. Trindade;Bruno Ramos;Sergio Brochsztain;Eduardo R. Triboni;Tayro Stringari;Ardson S. Vianna Junior;Antonio Carlos S. C. Teixeira",
@@ -2385,7 +2385,7 @@ var data = (function(){
 		},
 		{
 			"code": "ASSO",
-			"area": "Chemical-nano interactions",
+			"area": "Biological-nano interactions",
 			"type": "POSTER",
 			"title": "Association of Botanical Compounds from Different Plants with Nanotechnology as a Promising System Aiming Pest Control",
 			"authors": "Jhones L. de Oliveira;Estefania V.R. Campos;Tais Germano da Costa;Renata Lima;Jaqueline Franciosi Della Vechia;Sidneia Terezinha Soares;Daniel Junior de Andrade;Kelly Cristina Gonçalves;Ricardo Antonio Polanczyk;Leonardo Fernandes Fraceto",

@@ -31,7 +31,10 @@
 }
 
 footer.footer.loaded,
-header.header.loaded,
 main.loaded {
     display:block
+}
+
+header.header.loaded {
+    display: flex;
 }
