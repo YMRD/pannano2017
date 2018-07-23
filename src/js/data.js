@@ -20,16 +20,15 @@ var data = (function(){
 			_addMap(data, current.title, current);
 			if(current.type === "PAPER"){
 				papers.push(current.title);
-			} else {
-				title.push(current.title);
-				_addMap(area, current.area, current.title);
-				authorArr = current.authors.split(";");
-				for (j = 0; j < authorArr.length; j++){
-					author = authorArr[j].trim();
-					_addMap(authors, author, current.title);
-				}
+			} 
+			title.push(current.title);
+			_addMap(area, current.area, current.title);
+			authorArr = current.authors.split(";");
+			for (j = 0; j < authorArr.length; j++){
+				author = authorArr[j].trim();
+				_addMap(authors, author, current.title);
 			}
-		}
+			}
 		
     },
 
@@ -72,7 +71,7 @@ var data = (function(){
 			"code": "BVEG2",
 			"area": "Nanoinformatics and Modeling",
 			"type": "PAPER",
-			"title": "Innovation trajectories: an IPEN´s nanotechnology competence roadmapping to match´s market mechanisms",
+			"title": "Paper - Innovation trajectories: an IPEN´s nanotechnology competence roadmapping to match´s market mechanisms",
 			"authors": "Aline A. Perini;Anderson Z. Freitas",
 			"link": "https://drive.google.com/file/d/1sbzeTudECxXXA7vQzTbbm2chWT-aikeM/view"
 		},
@@ -80,7 +79,7 @@ var data = (function(){
 			"code": "BVAA",
 			"area": "Biological-nano Interactions",
 			"type": "PAPER",
-			"title": "Gold Nanoparticles synthetized with Aminolevulinic Acid for Theranostic: Photodynamic and Sonodynamic Therapies",
+			"title": "Paper - Gold Nanoparticles synthetized with Aminolevulinic Acid for Theranostic: Photodynamic and Sonodynamic Therapies",
 			"authors": "Karina O. Gonçalves;Letícia Bonfim;Daniel P. Vieira;Lilia C. Courrol",
 			"link": "https://drive.google.com/file/d/1vkIVwR4Bgs9ix0-cIvokCHHUs5Mz7Miw/view"
 		},
@@ -88,7 +87,7 @@ var data = (function(){
 			"code": "BVDN",
 			"area": "Chemical-nano interactions",
 			"type": "PAPER",
-			"title": "Characterization and Photocatalytic Behavior of TiO2 Thin Films Grown by MOCVD Process",
+			"title": "Paper - Characterization and Photocatalytic Behavior of TiO2 Thin Films Grown by MOCVD Process",
 			"authors": "Rodrigo T. Bento;Eduardo C. de Oliveira;Margarida Szurkalo;Olandir V. Correa;Marina F. Pillis",
 			"link": "https://drive.google.com/file/d/1F15HlNXc7BZYWDOrp_0oqmigml7GxkOm/view"
 		},
@@ -104,7 +103,7 @@ var data = (function(){
 			"code": "BTPN",
 			"area": "Chemical-nano interactions",
 			"type": "PAPER",
-			"title": "Hybrid density-functional calculations of formic acid on anatase TiO​ 2​ (101) surfaces",
+			"title": "Paper - Hybrid density-functional calculations of formic acid on anatase TiO​2​ (101) surfaces",
 			"authors": "L. Kou​;A. L. da Rosa​;E. N. Lima​;Th. Frauenheim",
 			"link": "https://drive.google.com/file/d/1EqGf_l_YXSsE3clLi2wN1mIWwOY3qvGx/view"
 		},
@@ -112,7 +111,7 @@ var data = (function(){
 			"code": "BTP4",
 			"area": "Nanomanufacturing",
 			"type": "PAPER",
-			"title":"Hardwired for success: Ni supported CeO 2 :Sm 2 O 3 nanowires as a super stable catalyst for ethanol steam reforming",
+			"title": "Paper - Hardwired for success: Ni supported CeO 2 :Sm 2 O 3 nanowires as a super stable catalyst for ethanol steam reforming",
 			"authors": "Thenner S. Rodrigues;Arthur B. L. de Moura;Felipe A. e Silva;Eduardo G. Candido;Vanderlei S. Bergamaschi;João C. Ferreira;Marcelo Linardi;Fabio C. Fonseca",
 			"link": "https://drive.google.com/file/d/1O0mkeJaAyv2J99kWf2aytmW6ZBXb3tRz/view"
 		},
@@ -399,7 +398,7 @@ var data = (function(){
 			"code": "BTAT",
 			"area": "Biological-nano Interactions",
 			"type": "POSTER",
-			"title": "Gold Nanoparticlessynthetized withAminolevulinic Acid forTheranostic: Photodynamic and Sonodynamic Therapies",
+			"title": "Gold Nanoparticles Synthetized with Aminolevulinic Acid for Theranostic: Photodynamic and Sonodynamic Therapies",
 			"authors": "Karina De Oliveira Gonçalves;Letícia Bonfim;Daniel Perez Vieira;Lilia Coronato Courrol",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1W-ZY87IClQJvH-k6i5m-NZ1vL8A_tw44/view?usp=drivesdk"
@@ -588,7 +587,7 @@ var data = (function(){
 			"code": "BTPN",
 			"area": "Chemical-nano interactions",
 			"type": "ORAL",
-			"title": "Hybrid density-functional calculations of formic acid on anatase TiO2(101) surfaces",
+			"title": "Hybrid density-functional calculations of formic acid on anatase TiO2 (101) surfaces",
 			"authors": "Andreia Luisa Da Rosa;Liangzhi Kou;Erika Nascimento Lima;Thomas Frauenheim",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1S_1d57c7qKim7jG_uWIXyF1ijuqYIBDz/view?usp=drivesdk"
@@ -1039,7 +1038,7 @@ var data = (function(){
 			"area": "Nanoinformatics and Modeling",
 			"type": "POSTER",
 			"title": "Innovation trajectories: an IPEN´s nanotechnology competence roadmapping to match´s market mechanisms",
-			"authors": "Aline Araujo Perini;Anderson Zanardi Freitas",
+			"authors": "Aline A. Perini;Anderson Zanardi Freitas",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1kyfki36F3eNt7zFws4qUfw-JAsp5YQ99/view?usp=drivesdk"
 		},
@@ -1057,9 +1056,17 @@ var data = (function(){
 			"area": "Biological-nano Interactions",
 			"type": "POSTER",
 			"title": "Incorporation of silver nanoparticles by the radiation process in Central Venous Catheter (CVC) of polyurethane coated with titanium oxide for antimicrobial activity",
-			"authors": "Leonardo Gondim De Andrade;Silva;Patricia Freitas;Thiago Lewis Reis Hewer",
+			"authors": "Leonardo Gondim De Andrade Silva;Patricia Freitas;Thiago Lewis Reis Hewer",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1KqBp9TH94aQyialYkL-BQARCVSLzaM4C/view?usp=drivesdk"
+		},
+		{
+			"code": "INCO",
+			"area": "Biological-nano Interactions",
+			"type": "PAPER",
+			"title": "Paper - Incorporation of silver nanoparticles by the radiation process in Central Venous Catheter (CVC) of polyurethane coated with titanium oxide for antimicrobial activity",
+			"authors": "Patricia Freitas;Thiago Lewis Reis Hewer;Leonardo Gondim De Andrade Silva",
+			"link": "https://drive.google.com/file/d/1VAcmtWbILzH8XVxNPrMZqpdouk5eOx8_/view"
 		},
 		{
 			"code": "BRNV",
@@ -1264,7 +1271,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "POSTER",
 			"title": "Ceramic materials as corrosion protective agents for urethanic films on steel ABNT 1020 fosphotated",
-			"authors": "Gonçalo Siqueira;Hélio Wiebeck;Leonardo Gondim De Andrade;Silva;José Mauro Diniz Oliveira;Rocío Del Pilar Bendezú Hernandez;Fábio Jose Esper",
+			"authors": "Gonçalo Siqueira;Hélio Wiebeck;Leonardo Gondim De Andrade Silva;José Mauro Diniz Oliveira;Rocío Del Pilar Bendezú Hernandez;Fábio Jose Esper",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1Hq0xsSuAO7BKRYAy7P4d-jaCe_Lx4ory/view?usp=drivesdk"
 		},
@@ -1497,8 +1504,8 @@ var data = (function(){
 			"code": "BTBS",
 			"area": "Nanomanufacturing",
 			"type": "ORAL",
-			"title": "Hardwired for success: Ni supported CeO2-Sm2O3 nanowires as a super stable catalyst for ethanol steam reforming",
-			"authors": "Thenner Silva Rodrigues;Arthur Brucoli Leme De Moura;Felipe Anchieta;Silva;Eduardo G. Candido;Vanderlei Sérgio Bergamaschi;João Coutinho Ferreira;Marcelo Linardi;Fábio Coral Fonseca",
+			"title": "Hardwired for success: Ni supported CeO 2-Sm 2 O 3 nanowires as a super stable catalyst for ethanol steam reforming",
+			"authors": "Thenner Silva Rodrigues;Arthur Brucoli Leme De Moura;Felipe Anchieta;Eduardo G. Candido;Vanderlei Sérgio Bergamaschi;João Coutinho Ferreira;Marcelo Linardi;Fábio Coral Fonseca",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1eND4lUHgX1Ns_A2BTSjUYE08N8we_Bac/view?usp=drivesdk"
 		},
@@ -1660,7 +1667,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "ORAL",
 			"title": "Functionalization-induced changes in the carbon nanofiber structure via ionizing radiation using vinyl monomers",
-			"authors": "Maria Cecilia Conceição Evora;Xinyi Lu;Nam-goo Kang;Kunlun Hong;Roberto Uribe;Leonardo Gondim De Andrade;Silva;Carla Lake;Jimmy Mays",
+			"authors": "Maria Cecilia Conceição Evora;Xinyi Lu;Nam-goo Kang;Kunlun Hong;Roberto Uribe;Leonardo Gondim De Andrade Silva;Carla Lake;Jimmy Mays",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1cKa2lDT4rqycZir465MFVEF4lr3LtbZY/view?usp=drivesdk"
 		},
@@ -1732,7 +1739,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "POSTER",
 			"title": "Study of combined light stabilizers systems (organics and nanoparticles) applied in polyethylene films",
-			"authors": "Patricia Negrini Siqueira Poveda;Leonardo Gondim De Andrade;Silva",
+			"authors": "Patricia Negrini Siqueira Poveda;Leonardo Gondim De Andrade Silva",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1B_f9QLp8sPlEAStD9LIp5C9UKV6G7TA5/view?usp=drivesdk"
 		},

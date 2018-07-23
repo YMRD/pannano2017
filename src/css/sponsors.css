@@ -1,0 +1,15 @@
+section.sponsors {
+    text-align: center;
+}
+
+div.spons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img.sponsor {
+    width: 200px;
+    margin: 15px;
+}

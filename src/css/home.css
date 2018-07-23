@@ -4,19 +4,20 @@ html, body {
 
 header.header {
     display:none;
-    min-height: 300px;
-    background-image: url('img/pannano-background-2-big.jpg');
+    height: 100%;
+    width: 100%;
+    background-image: url('img/pannano-background-1.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     flex-flow: column;
     justify-content: flex-end;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 header.header.scroll {
-    min-height: 260px;
+    height: 250px;
 }
 
 header.header h1 {
@@ -33,16 +34,11 @@ main {
     position: relative;
     background:white;
     flex: 1 1 500px;
-    /*display: flex;*/
-    margin-top: 300px;
-    display:none;
+    margin-top: 360px;
+    display: none;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: stretch;
-}
-
-main.scroll {
-    margin-top: 250px;
 }
 
 footer.footer {

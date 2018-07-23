@@ -8,9 +8,14 @@
     <meta name="keywords" content="proceedings,congress,pannano,nanotechnology,online">
     <title>Pannano Proceedings</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/site.css" />
+
+    <script defer src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script defer src="libs/jquery/popper.min.js"></script>
+    <script defer src="libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script defer src="js/main.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
 
 <body onload="main.init();" class="d-flex flex-column">
@@ -19,119 +24,67 @@
         <span>Loading...</span>
     </div>
     <header class="header loadings fixed-top">
-        <h1 class="text-hide">1st Pan American Congress of Nanotechnology Fundamentals and Applications to Shape the Future</h1>
-        <h2 class="text-hide">Guarujá, SP, Brazil - Nov. 27-30, 2017</h2>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+            <h1 class="text-hide">1st Pan American Congress of Nanotechnology Fundamentals and Applications to Shape the Future</h1>
+            <h2 class="text-hide">Guarujá, SP, Brazil - Nov. 27-30, 2017</h2>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto" id="navigator">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Top</a>
+                        <a class="nav-link" href="#event">Event</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://drive.google.com/file/d/1BF6rzeJqZNAxGBWBeg7MxB5Xio9cYa47/view" target="_blank" role="button">
-                            <!--<i class="far fa-calendar-alt"></i> -->
-                            Event Program
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                        <a class="nav-link" href="#orgs">Organization</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="#sponsors">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#papers">Abstracts and Papers</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main class="container-fluid loading" id="container">
-        <ul class="nav nav-pills nav-justified" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" data-toggle="pill" href="#title" role="tab">Title</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="pill" href="#author" role="tab">Author</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="pill" href="#theme" role="tab">Area</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="pill" href="#papers" role="tab">Papers</a>
-            </li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="title" role="tabpanel">
-                <!--  <div class="d-flex flex-column"> -->
-                <div class="form-group">
-                    <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-                </div>
-                <div class="list-group" data-target="modal" data-type="title"></div>
-                <!-- </div> -->
+
+        <h1 id="event">PanNano 2017 - Conference Proceedings</h1>
+        <section class="event">
+            <h2>Coordinators</h2>
+            <ul>
+                <li>Debora Frigi Rodrigues</li>
+                <li>Solange Kazumi Sakata</li>
+                <li>Vinka Oyanedel-Craver</li>
+            </ul>
+        </section>
+        <section class="organization">
+            <h2>Jointly organized by</h2>
+            <div id="orgs" class="orgs">
+
             </div>
-            <div class="tab-pane fade" id="author" role="tabpanel">
-                <div class="d-flex flex-row">
-                    <div class="split-panel">
-                        <div class="form-group">
-                            <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-                        </div>
-                        <div class="list-group" data-target="sublist" data-type="author"></div>
-                    </div>
-                    <div class="split-panel">
-                        <div class="form-group">
-                            <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-                        </div>
-                        <div class="list-group sublist" data-target="modal"></div>
-                    </div>
-                </div>
+        </section>
+        <section class="organization">
+            <h2>Co-hosted by</h2>
+            <div id="hosts" class="orgs">
+
             </div>
-            <div class="tab-pane fade" id="theme" role="tabpanel">
-                <div class="d-flex flex-row">
-                    <div class="split-panel">
-                        <div class="form-group">
-                            <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-                        </div>
-                        <div class="list-group" data-target="sublist" data-type="area"></div>
-                    </div>
-                    <div class="split-panel">
-                        <div class="form-group">
-                            <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-                        </div>
-                        <div class="list-group sublist" data-target="modal"></div>
-                    </div>
-                </div>
+        </section>
+        <section class="organization">
+            <h2>Support</h2>
+            <div id="supports" class="orgs"></div>
+
             </div>
-            <div class="tab-pane fade" id="papers" role="tabpanel">
-                <!--  <div class="d-flex flex-column"> -->
-                <div class="form-group">
-                    <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-                </div>
-                <div class="list-group" data-target="modal" data-type="paper"></div>
-                <!-- </div> -->
-            </div>
-        </div>
-        <div class="panel">
-            <h1>Jointly organized by</h1>
-        </div>
+        </section>
         <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="paper-modal-label" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="paper-modal-label">Paper Details</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <span aria-hidden="true">&times;</span>
+          </button>
                     </div>
                     <div class="modal-body">
                         <h1 id="paper-title" class="paper-title"></h1>
@@ -147,11 +100,95 @@
                 </div>
             </div>
         </div>
+        <section class="sponsors">
+            <h2>Sponsors</h2>
+            <div id="sponsors" class="spons">
+
+            </div>
+        </section>
+        <section class="sponsors">
+            <h2>Sponsored Awards</h2>
+            <p>
+                <strong>Best Student Poster Award:</strong> Posters for Undergraduates and Graduate students
+            </p>
+            <p>
+                <strong>Best Postdoc Poster Award:</strong> Posters for Postdoctoral Students<br/> Evaluation: Best organization of the poster, clarity, and oral presentation
+            </p>
+            <p>
+                <strong>SNO elevator speech award for Students </strong>(award sponsored by the Sustainable Nanotechnology Organization)<br/> Preparation: One PowerPoint Slides and a brief talk for 2 min about the summary of the research and findings,
+                its importance and environmental/societal impact.<br/> Evaluation: Organization of the slide, train of thought, clarity of explanation and broad impact of the research.
+            </p>
+        </section>
+        <section class="works" id="papers">
+            <h2>Presentation Works</h2>
+            <ul class="nav nav-pills nav-justified" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#title" role="tab">Title</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#author" role="tab">Author</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#theme" role="tab">Area</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#papers" role="tab">Papers</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="title" role="tabpanel">
+                    <!--  <div class="d-flex flex-column"> -->
+                    <div class="form-group">
+                        <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
+                    </div>
+                    <div class="list-group" data-target="modal" data-type="title"></div>
+                    <!-- </div> -->
+                </div>
+                <div class="tab-pane fade" id="author" role="tabpanel">
+                    <div class="d-flex flex-row">
+                        <div class="split-panel">
+                            <div class="form-group">
+                                <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
+                            </div>
+                            <div class="list-group" data-target="sublist" data-type="author"></div>
+                        </div>
+                        <div class="split-panel">
+                            <div class="form-group">
+                                <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
+                            </div>
+                            <div class="list-group sublist" data-target="modal"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="theme" role="tabpanel">
+                    <div class="d-flex flex-row">
+                        <div class="split-panel">
+                            <div class="form-group">
+                                <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
+                            </div>
+                            <div class="list-group" data-target="sublist" data-type="area"></div>
+                        </div>
+                        <div class="split-panel">
+                            <div class="form-group">
+                                <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
+                            </div>
+                            <div class="list-group sublist" data-target="modal"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="papers" role="tabpanel">
+                    <!--  <div class="d-flex flex-column"> -->
+                    <div class="form-group">
+                        <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
+                    </div>
+                    <div class="list-group" data-target="modal" data-type="paper"></div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
     </main>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script src="js/main.min.js"></script>
 </body>
 
 </html>

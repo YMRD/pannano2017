@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "Online system for the 1st Panamerican Nanotecnology Conference",
   "main": "index.js",
-  "dependencies": { },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-uglify": "^3.3.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-html-build": "^0.7.1"
   },
   "scripts": {

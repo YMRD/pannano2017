@@ -10,10 +10,22 @@ module.exports = function(grunt) {
             all: ['Gruntfile.js', 'src/js/*.js']
         },
         uglify: {
+            options:{
+                sourceMap: true
+            },
             scripts: {
               files: {
                 'docs/js/main.min.js': ['src/js/*.js']
               }
+            }
+        },
+        connect:{
+            server: {
+                options: {
+                    port: 8000,
+                    base: 'docs',
+                    open: true
+                }
             }
         },
         cssmin: {
@@ -48,7 +60,8 @@ module.exports = function(grunt) {
             }
         },
         copy:{
-            images:{expand: true, cwd:'src/', src: ['images/**.*'], dest: 'docs/', },
+            libs:{expand: true, cwd:'src/', src: ['libs/**/*.*'], dest: 'docs/', },
+            images:{expand: true, cwd:'src/', src: ['images/**/*.*'], dest: 'docs/', },
             cssimages:{expand: true, cwd:'src/', src: ['css/img/**.*'], dest: 'docs/', },
         },
         watch: {
@@ -63,6 +76,7 @@ module.exports = function(grunt) {
   
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-html-build');
@@ -72,5 +86,6 @@ module.exports = function(grunt) {
   
     // Default task(s).
     grunt.registerTask('default', ['jshint']);
+    grunt.registerTask("dev", ['clean', 'jshint', 'uglify', 'cssmin', 'copy', "htmlbuild", "connect", "watch"]);
     grunt.registerTask('build', ['clean', 'jshint', 'uglify', 'cssmin', 'copy', "htmlbuild"]);
 };
