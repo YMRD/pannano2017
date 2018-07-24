@@ -17,15 +17,18 @@
   <script defer src="js/main.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
+ 
+<body onload="main.init();" class="">
+  <div id="loader-wrapper">
+    <div id="loader"></div>
 
-<body onload="main.init();" class="d-flex flex-column">
-  <div id="splash" class="splash">
-    <div class="loader"></div>
-    <span>Loading...</span>
+    <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+
   </div>
   <!-- build:section layout.header -->
   <!-- /build -->
-  <main class="container-fluid loading" id="container">
+  <main class="container-fluid d-flex flex-column align-items-stretch justify-content-center">
     
     <!-- build:section recursive views -->
     <!-- /build -->

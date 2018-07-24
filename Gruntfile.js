@@ -35,7 +35,7 @@ module.exports = function(grunt) {
             },
             target: {
               files: {
-                'docs/css/site.css': ['src/**/*.css']
+                'docs/css/site.css': ['src/css/**/*.css']
               }
             }
         },

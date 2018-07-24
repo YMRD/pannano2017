@@ -18,21 +18,27 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
 
-<body onload="main.init();" class="d-flex flex-column">
-    <div id="splash" class="splash">
-        <div class="loader"></div>
-        <span>Loading...</span>
+<body onload="main.init();" class="">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
     </div>
-    <header class="header loadings fixed-top">
+    <header class="d-flex flex-column align-items-center justify-content-end fundo-logo fixed-top">
+        <h1 class="text-hide">1st Pan American Congress of Nanotechnology Fundamentals and Applications to Shape the Future</h1>
+        <h2 class="text-hide">Guarujá, SP, Brazil - Nov. 27-30, 2017</h2>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-            <h1 class="text-hide">1st Pan American Congress of Nanotechnology Fundamentals and Applications to Shape the Future</h1>
-            <h2 class="text-hide">Guarujá, SP, Brazil - Nov. 27-30, 2017</h2>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto" id="navigator">
-                    <li class="nav-item active">
+                    <!--<li class="nav-item active">
+                <a class="nav-link" href="#">Cover</a>
+              </li>-->
+                    <li class="nav-item">
                         <a class="nav-link" href="#event">Event</a>
                     </li>
                     <li class="nav-item">
@@ -48,7 +54,7 @@
             </div>
         </nav>
     </header>
-    <main class="container-fluid loading" id="container">
+    <main class="container-fluid d-flex flex-column align-items-stretch justify-content-center">
 
         <h1 id="event">PanNano 2017 - Conference Proceedings</h1>
         <section class="event">
