@@ -11,7 +11,9 @@ module.exports = function(grunt) {
         },
         uglify: {
             options:{
-                sourceMap: true
+                sourceMap: {
+                    includeSources: true
+                }
             },
             scripts: {
               files: {
@@ -62,6 +64,7 @@ module.exports = function(grunt) {
         copy:{
             libs:{expand: true, cwd:'src/', src: ['libs/**/*.*'], dest: 'docs/', },
             images:{expand: true, cwd:'src/', src: ['images/**/*.*'], dest: 'docs/', },
+            icones:{expand:true, cwd:"src/icones", src:["*"], dest:"docs/"},
             cssimages:{expand: true, cwd:'src/', src: ['css/img/**.*'], dest: 'docs/', },
         },
         watch: {

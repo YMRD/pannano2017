@@ -22,7 +22,7 @@ var sponsors = (function(){
                   .addClass("sponsor");
             $conteudo.push(img);
         }
-        $("#sponsors").empty().append($conteudo);
+        $("#sponsors div.spons").empty().append($conteudo);
         
     };
 

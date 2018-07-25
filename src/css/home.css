@@ -2,6 +2,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    position: relative;
+}
+
 header {
     visibility: hidden;
     height: 100%;
@@ -24,16 +28,7 @@ header.scroll {
 main {  
     background:white;
     flex: 1 1 500px;
-    margin-top: 210px;
-}
-
-footer {
-    flex: 0 0 auto;
-    display:none;
-    background: black;
-    color: white;
-    font-weight: bold;
-    text-align: center;
+    margin-top: 400px;
 }
 
 section {
@@ -41,12 +36,25 @@ section {
     border-bottom: 1px solid black;
 }
 
-section.papers {
-    margin: 1.2em;
-    flex: 1 1 0;
-    border-radius: 5px;
-    background: white;
-    overflow: hidden;
+#navigator {
+    align-self: flex-end;
+    margin-right: 8px;
+}
+
+section.event {
+    flex-wrap: wrap;
+}
+
+section.event > * {
+    flex: 1 0 250px;
+}
+
+div.botoes {
+    padding: 0 10px;
+}
+
+div.botoes a {
+    margin: 5px 0;
 }
 
 div.tab-pane { margin: 0.8em 0}

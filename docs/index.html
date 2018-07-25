@@ -8,6 +8,23 @@
     <meta name="keywords" content="proceedings,congress,pannano,nanotechnology,online">
     <title>Pannano Proceedings</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/site.css" />
 
@@ -18,7 +35,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
 
-<body onload="main.init();" class="">
+<body onload="main.init();">
     <div id="loader-wrapper">
         <div id="loader"></div>
 
@@ -26,29 +43,29 @@
         <div class="loader-section section-right"></div>
 
     </div>
-    <header class="d-flex flex-column align-items-center justify-content-end fundo-logo fixed-top">
+    <header class="d-flex flex-column align-items-center justify-content-end fundo-logo fixed-top" id="top">
         <h1 class="text-hide">1st Pan American Congress of Nanotechnology Fundamentals and Applications to Shape the Future</h1>
         <h2 class="text-hide">Guarujá, SP, Brazil - Nov. 27-30, 2017</h2>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navigator">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto" id="navigator">
-                    <!--<li class="nav-item active">
-                <a class="nav-link" href="#">Cover</a>
-              </li>-->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cover</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#event">Event</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#orgs">Organization</a>
+                        <a class="nav-link" href="#organization">Organization</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sponsors">Sponsors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#papers">Abstracts and Papers</a>
+                        <a class="nav-link" href="#works">Abstracts and Papers</a>
                     </li>
                 </ul>
             </div>
@@ -56,32 +73,52 @@
     </header>
     <main class="container-fluid d-flex flex-column align-items-stretch justify-content-center">
 
-        <h1 id="event">PanNano 2017 - Conference Proceedings</h1>
-        <section class="event">
-            <h2>Chair Members</h2>
-            <ul>
-                <li>Debora Frigi Rodrigues</li>
-                <li>Solange Kazumi Sakata</li>
-                <li>Vinka Oyanedel-Craver</li>
-            </ul>
-        </section>
-        <section class="organization">
-            <h2>Jointly organized by</h2>
-            <div id="orgs" class="orgs">
+        <h1 class="text-center" id="event">PanNano 2017 - Conference Proceedings</h1>
+        <section class="event d-flex flex-row justify-content-around">
+            <div class="text-center">
+                <h2>Chair Members</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Debora Frigi Rodrigues</li>
+                    <li class="list-group-item">Solange Kazumi Sakata</li>
+                    <li class="list-group-item">Vinka Oyanedel-Craver</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <h2>Location and Time</h2>
+                <p>
+                    Guarujá, São Paulo, Brazil<br/>
+                    <time> Nov.27-30, 2017</time>
+                </p>
+            </div>
+            <div class="botoes d-flex flex-column justify-content-around align-items-stretch p2">
+                <a role="button" href="https://drive.google.com/open?id=1bmEorRUBCMuZlMWOggmQ00LWqXAwLMcF" target="_blank" class="btn btn-outline-primary">
+            <i class="fas fa-book"></i>
+            Preface
+        </a>
+
+                <a role="button" href="https://drive.google.com/open?id=1BF6rzeJqZNAxGBWBeg7MxB5Xio9cYa47" target="_blank" class="btn btn-outline-primary">
+            <i class="fas fa-calendar-alt"></i>
+            Program
+        </a>
 
             </div>
         </section>
-        <section class="organization">
-            <h2>Co-hosted by</h2>
-            <div id="hosts" class="orgs">
-
-            </div>
-        </section>
-        <section class="organization">
-            <h2>Support</h2>
-            <div id="supports" class="orgs"></div>
-
-            </div>
+        <section id="organization" class="organization">
+            <article>
+                <h2>Jointly organized by</h2>
+                <div id="orgs" class="orgs">
+                </div>
+            </article>
+            <article>
+                <h2>Co-hosted by</h2>
+                <div id="hosts" class="orgs">
+                </div>
+            </article>
+            <article>
+                <h2>Support</h2>
+                <div id="supports" class="orgs"></div>
+                </div>
+            </article>
         </section>
         <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="paper-modal-label" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -106,13 +143,13 @@
                 </div>
             </div>
         </div>
-        <section class="sponsors">
+        <section id="sponsors" class="sponsors">
             <h2>Sponsors</h2>
-            <div id="sponsors" class="spons">
+            <div class="spons">
 
             </div>
         </section>
-        <section class="works" id="papers">
+        <section class="works" id="works">
             <h2>Presentation Works</h2>
             <ul class="nav nav-pills nav-justified" role="tablist">
                 <li class="nav-item">
