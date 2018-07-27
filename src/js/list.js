@@ -10,11 +10,8 @@ var list = (function(){
                 getter = data["getBy"+type[0].toUpperCase()+type.substring(1)];
                 if(getter){
                     dados = getter();
-                } else {
-                    dados = [];
-                    console.log("Não encontrado o tipo: "+type);
+                    _carregar($elem, dados);
                 }
-                _carregar($elem, dados);
             } else {
                 $elem.parent().hide();
             }

@@ -9,9 +9,10 @@ var main = (function(){
         list.init();
         // Initializing filters
         filter.init();
-        // Removing splash and showing main content
-        $("#splash").remove();
-        $("header, footer, main").addClass("loaded");
+        // Initializing organizations
+        orgs.init();
+        sponsors.init();
+        $('body').addClass('loaded');
     };
 
     return {

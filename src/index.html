@@ -8,120 +8,49 @@
   <meta name="keywords" content="proceedings,congress,pannano,nanotechnology,online" >
   <title>Pannano Proceedings</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-    crossorigin="anonymous" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/site.css" />
+
+  <script defer src="libs/jquery/jquery-3.3.1.min.js"></script>
+  <script defer src="libs/jquery/popper.min.js"></script>
+  <script defer src="libs/bootstrap/js/bootstrap.bundle.js"></script>
+  <script defer src="js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
+ 
+<body onload="main.init();">
+  <div id="loader-wrapper">
+    <div id="loader"></div>
 
-<body onload="main.init();" class="d-flex flex-column">
-  <div id="splash" class="splash">
-    <div class="loader"></div>
-    <span>Loading...</span>
+    <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+
   </div>
-  <header class="header loading">
-      <h1>1st Pan American Congress of Nanotechnology 
-          Fundamentals and Applications to Shape the Future</h1>
-      <h2>Guarujá, SP, Brazil -  Nov. 27-30, 2017</h2>
-  </header>
-
-  <main class="container-fluid loading" id="container">    
-    <ul class="nav nav-pills nav-justified" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" data-toggle="pill" href="#title" role="tab">Title</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#author" role="tab">Author</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#theme" role="tab">Area</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#papers" role="tab">Papers</a>
-      </li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div class="tab-pane fade show active" id="title" role="tabpanel">
-        <!--  <div class="d-flex flex-column"> -->
-          <div class="form-group">
-            <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-          </div>
-          <div class="list-group" data-target="modal" data-type="title"></div>
-        <!-- </div> -->
-      </div>
-      <div class="tab-pane fade" id="author" role="tabpanel">
-        <div class="d-flex flex-row">
-          <div class="split-panel">
-            <div class="form-group">
-              <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-            </div>
-            <div class="list-group" data-target="sublist" data-type="author"></div>
-          </div>
-          <div class="split-panel">
-            <div class="form-group">
-                <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-            </div>
-            <div class="list-group sublist" data-target="modal"></div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="theme" role="tabpanel">
-        <div class="d-flex flex-row">
-          <div class="split-panel">
-            <div class="form-group">
-              <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-            </div>
-            <div class="list-group" data-target="sublist" data-type="area"></div>
-          </div>
-          <div class="split-panel">
-            <div class="form-group">
-                <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-            </div>
-            <div class="list-group sublist" data-target="modal"></div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="papers" role="tabpanel">
-        <!--  <div class="d-flex flex-column"> -->
-          <div class="form-group">
-            <input type="text" class="form-control filter" placeholder="Type to search" aria-label="Search">
-          </div>
-          <div class="list-group" data-target="modal" data-type="paper"></div>
-        <!-- </div> -->
-      </div>
-    </div>
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="paper-modal-label" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="paper-modal-label">Paper Details</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h1 id="paper-title" class="paper-title"></h1>
-              <h2>Authors</h2>
-              <p id="paper-authors"></p>
-              <h2>Area</h2>
-              <p id="paper-area"></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i>Close</button>
-              <a class="btn btn-primary" id="paper-link" href="#" target="_blank"><i class="fas fa-file-pdf"></i>Download PDF</a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- build:section layout.header -->
+  <!-- /build -->
+  <main class="container-fluid d-flex flex-column align-items-stretch justify-content-center">
+    
+    <!-- build:section recursive views -->
+    <!-- /build -->
+   
   </main>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-    crossorigin="anonymous"></script>
-  <script src="js/main.min.js"></script>
 </body>
 
 </html>
