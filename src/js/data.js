@@ -62,7 +62,7 @@ var data = (function(){
 		{
 			"code": "BVDV",
 			"area": "Biological-nano Interactions",
-			"type": "PAPER",
+			"type": "ORAL",
 			"title": "Radiolabeling of protein-based nanoparticles for biomedical imaging and diagnostics",
 			"authors": "Aryel Heitor Ferreira;Fabio L. N. Marques;Larissa Estessi de Souza;Gustavo H. C. Varca;Gabriela Nemesio Fazolin;Tamara Fucase;Ademar Benévolo Lugão",
 			"link": "https://drive.google.com/file/d/1D_fzJj0LuZm8JknDdIIVfEGRqKIVg8PA/view"
@@ -95,7 +95,7 @@ var data = (function(){
 			"code": "BVDP",
 			"area": "Chemical-nano interactions",
 			"type": "PAPER",
-			"title": "Synthesis and Characterization of TiO 2 Films Obtained by Sol-Gel Method",
+			"title": "Paper - Synthesis and Characterization of TiO 2 Films Obtained by Sol-Gel Method",
 			"authors": "Margarida Szurkalo;Eduardo C. de Oliveira;Olandir V. Correa;Rodrigo T. Bento;Marina Fuser Pillis",
 			"link": "https://drive.google.com/file/d/1MeemT5cqpsTbxAci_J9giu-lb1t2u6FQ/view"
 		},

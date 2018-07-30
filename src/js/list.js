@@ -67,6 +67,7 @@ var list = (function(){
             var title = $(this).data("paper"),
                 paper = data.getPaper(title);
             if(paper){
+                $("#paper-type").text(paper.type === "PAPER" ? "Paper" : "Abstract");
                 $("#paper-title").text(paper.title);
                 $("#paper-authors").text(paper.authors);
                 $("#paper-area").text(paper.area);
