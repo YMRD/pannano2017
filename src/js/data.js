@@ -64,7 +64,7 @@ var data = (function(){
 			"area": "Biological-nano Interactions",
 			"type": "PAPER",
 			"title": "Radiolabeling of protein-based nanoparticles for biomedical imaging and diagnostics",
-			"authors": "Aryel Heitor Ferreira;Fabio L. N. Marques;Larissa Estessi de Souza;Gustavo H. C. Varca;Gabriela N. Fazolin;Tamara Fucase;Ademar B. Lugão",
+			"authors": "Aryel Heitor Ferreira;Fabio L. N. Marques;Larissa Estessi de Souza;Gustavo H. C. Varca;Gabriela Nemesio Fazolin;Tamara Fucase;Ademar Benévolo Lugão",
 			"link": "https://drive.google.com/file/d/1D_fzJj0LuZm8JknDdIIVfEGRqKIVg8PA/view"
 		},
 		{
@@ -72,7 +72,7 @@ var data = (function(){
 			"area": "Nanoinformatics and Modeling",
 			"type": "PAPER",
 			"title": "Paper - Innovation trajectories: an IPEN´s nanotechnology competence roadmapping to match´s market mechanisms",
-			"authors": "Aline A. Perini;Anderson Z. Freitas",
+			"authors": "Aline A. Perini;Anderson Zanardi Freitas",
 			"link": "https://drive.google.com/file/d/1sbzeTudECxXXA7vQzTbbm2chWT-aikeM/view"
 		},
 		{
@@ -80,7 +80,7 @@ var data = (function(){
 			"area": "Biological-nano Interactions",
 			"type": "PAPER",
 			"title": "Paper - Gold Nanoparticles synthetized with Aminolevulinic Acid for Theranostic: Photodynamic and Sonodynamic Therapies",
-			"authors": "Karina de Oliveira Gonçalves;Letícia Bonfim;Daniel P. Vieira;Lilia C. Courrol",
+			"authors": "Karina de Oliveira Gonçalves;Letícia Bonfim;Daniel Perez Vieira;Lilia Coronato Courrol",
 			"link": "https://drive.google.com/file/d/1vkIVwR4Bgs9ix0-cIvokCHHUs5Mz7Miw/view"
 		},
 		{
@@ -88,7 +88,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "PAPER",
 			"title": "Paper - Characterization and Photocatalytic Behavior of TiO2 Thin Films Grown by MOCVD Process",
-			"authors": "Rodrigo T. Bento;Eduardo C. de Oliveira;Margarida Szurkalo;Olandir V. Correa;Marina F. Pillis",
+			"authors": "Rodrigo Teixeira Bento;Eduardo Cesar de Oliveira;Margarida Szurkalo;Olandir V. Correa;Marina Fuser Pillis",
 			"link": "https://drive.google.com/file/d/1F15HlNXc7BZYWDOrp_0oqmigml7GxkOm/view"
 		},
 		{
@@ -96,7 +96,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "PAPER",
 			"title": "Synthesis and Characterization of TiO 2 Films Obtained by Sol-Gel Method",
-			"authors": "Margarida Szurkalo;Eduardo C. de Oliveira;Olandir V. Correa;Rodrigo T. Bento;Marina F. Pillis",
+			"authors": "Margarida Szurkalo;Eduardo C. de Oliveira;Olandir V. Correa;Rodrigo T. Bento;Marina Fuser Pillis",
 			"link": "https://drive.google.com/file/d/1MeemT5cqpsTbxAci_J9giu-lb1t2u6FQ/view"
 		},
 		{
@@ -104,7 +104,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "PAPER",
 			"title": "Paper - Hybrid density-functional calculations of formic acid on anatase TiO​2​ (101) surfaces",
-			"authors": "L. Kou​;A. L. da Rosa​;E. N. Lima​;Th. Frauenheim",
+			"authors": "Liangzhi Kou​;Andreia Luisa da Rosa​;Erika Nascimento Lima​;Thomas Frauenheim",
 			"link": "https://drive.google.com/file/d/1EqGf_l_YXSsE3clLi2wN1mIWwOY3qvGx/view"
 		},
 		{
@@ -112,7 +112,7 @@ var data = (function(){
 			"area": "Nanomanufacturing",
 			"type": "PAPER",
 			"title": "Paper - Hardwired for success: Ni supported CeO 2 :Sm 2 O 3 nanowires as a super stable catalyst for ethanol steam reforming",
-			"authors": "Thenner S. Rodrigues;Arthur B. L. de Moura;Felipe A. e Silva;Eduardo G. Candido;Vanderlei S. Bergamaschi;João C. Ferreira;Marcelo Linardi;Fabio C. Fonseca",
+			"authors": "Thenner Silva Rodrigues;Arthur Brucoli Leme de Moura;Felipe A. e Silva;Eduardo G. Candido;Vanderlei Sérgio Bergamaschi;João Coutinho Ferreira;Marcelo Linardi;Fabio Coral Fonseca",
 			"link": "https://drive.google.com/file/d/1O0mkeJaAyv2J99kWf2aytmW6ZBXb3tRz/view"
 		},
 		{
@@ -525,7 +525,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "POSTER",
 			"title": "The impact of physical-chemical parameters over the formation of papain nanoparticles crosslinked by radiation",
-			"authors": "Gabriela Nemesio Fazolin;Gustavo H C Varca;Ademar Benévolo Lugão",
+			"authors": "Gabriela Nemesio Fazolin;Gustavo H. C. Varca;Ademar Benévolo Lugão",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1u7Z7QLyydzAhLHzCnm97ImkAf4-Tt_po/view?usp=drivesdk"
 		},
@@ -732,7 +732,7 @@ var data = (function(){
 			"area": "Biological-nano Interactions",
 			"type": "POSTER",
 			"title": "Development of cellulose-based gels carrying carvacrol or linalool nanoencapsulated in chitosan nanoparticles",
-			"authors": "Estefania Vangelie Ramos Campos;Jhones Luiz Oliveira;Patrícia Luiza Freitas Proença;Daniele Ribeiro de Araujo;Leonardo Fernandes Fraceto",
+			"authors": "Estefania Vangelie Ramos Campos;Jhones Luiz de Oliveira;Patrícia Luiza Freitas Proença;Daniele Ribeiro de Araujo;Leonardo Fernandes Fraceto",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1qfk2JFhyEkv0g6S87zzF9_VNaBCGNpBt/view?usp=drivesdk"
 		},
@@ -768,7 +768,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "ORAL",
 			"title": "Impacts and Characteristics of Ferrate Resultant Particles in Water Treatment ",
-			"authors": "Joseph Goodwill Goodwill;Kaoru Ikuma;David Reckhow;Joseph Gikonyo;Yanjun Jiang;Josh Cunningham;Xuyen Mai;John Tobiason Tobiason",
+			"authors": "Joseph Goodwill Goodwill;Kaoru Ikuma;David Reckhow;Joseph Gikonyo;Yanjun Jiang;Josh Cunningham;Xuyen Mai;John E. Tobiason",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1pqUwRkreGi4aVf5ZUCN2r2cBx6mfj80C/view?usp=drivesdk"
 		},
@@ -849,7 +849,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "POSTER",
 			"title": "TL and OSL properties of strontium aluminate nanocrystals applied to ionizing radiation dosimetry ",
-			"authors": "Sonia Tatumi Tatumi;Tainara Caroline Rocha;Alvaro de Farias Soares;Diego Renan Giglioti Tudela;Kátia Alessandra Gonçalves",
+			"authors": "Sonia H. Tatumi;Tainara Caroline Rocha;Alvaro de Farias Soares;Diego Renan Giglioti Tudela;Kátia Alessandra Gonçalves",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1onuegRNDuTERkZLjW0o7dob0PP6L7CzB/view?usp=drivesdk"
 		},
@@ -1253,7 +1253,7 @@ var data = (function(){
 			"area": "Biological-nano Interactions",
 			"type": "POSTER",
 			"title": "Evaluation of the in vitro and in vivo toxicity of gold nanoparticles synthesized by green nanotechnology",
-			"authors": "Jorge Gabriel dos Santos Batista;Janaina A. G. Barros;Gustavo H C Varca;Sizue Ota Rogero;Adriana Kuchinski Cavalcante;Fernanda Carolina Mamede;José Rogero;Ademar Benévolo Lugão",
+			"authors": "Jorge Gabriel dos Santos Batista;Janaina A. G. Barros;Gustavo H. C. Varca;Sizue Ota Rogero;Adriana Kuchinski Cavalcante;Fernanda Carolina Mamede;José Rogero;Ademar Benévolo Lugão",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1hwXD5H7SWwDySHroquOr-BuwMTr8qebo/view?usp=drivesdk"
 		},
@@ -1505,7 +1505,7 @@ var data = (function(){
 			"area": "Nanomanufacturing",
 			"type": "ORAL",
 			"title": "Hardwired for success: Ni supported CeO 2-Sm 2 O 3 nanowires as a super stable catalyst for ethanol steam reforming",
-			"authors": "Thenner Silva Rodrigues;Arthur Brucoli Leme de Moura;Felipe Anchieta;Eduardo G. Candido;Vanderlei Sérgio Bergamaschi;João Coutinho Ferreira;Marcelo Linardi;Fábio Coral Fonseca",
+			"authors": "Thenner Silva Rodrigues;Arthur Brucoli Leme de Moura;Felipe A. e Silva;Eduardo G. Candido;Vanderlei Sérgio Bergamaschi;João Coutinho Ferreira;Marcelo Linardi;Fábio Coral Fonseca",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1eND4lUHgX1Ns_A2BTSjUYE08N8we_Bac/view?usp=drivesdk"
 		},
@@ -1631,7 +1631,7 @@ var data = (function(){
 			"area": "Biological-nano Interactions",
 			"type": "POSTER",
 			"title": "Zein nanoparticles for pest control in sustainable agriculture: the encapsulation of citronella oil compounds",
-			"authors": "Jhones Luiz Oliveira;Estefania Vangelie Ramos Campos;Anderson Espirito Santo Pereira;Tatiane Pasquoto;Renata de Lima;Leonardo Fernandes Fraceto",
+			"authors": "Jhones Luiz de Oliveira;Estefania Vangelie Ramos Campos;Anderson Espirito Santo Pereira;Tatiane Pasquoto;Renata Lima;Leonardo Fernandes Fraceto",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1CYv5Z5-tGs7OTjA8m8Z-O8muvgXuq7Pw/view?usp=drivesdk"
 		},
@@ -1901,7 +1901,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "POSTER",
 			"title": "TL and OSL properties of artificial nanocrystals of quartz polymorph obtained via sol-gel and its applicability to environmental ionizing radiation dosimetry ",
-			"authors": "Diego Renan Giglioti Tudela;Sonia Tatumi Tatumi",
+			"authors": "Diego Renan Giglioti Tudela;Sonia H. Tatumi",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/187HNDuLGQ_RmbRgoY3rLb9-ARSNViwYp/view?usp=drivesdk"
 		},
@@ -2081,7 +2081,7 @@ var data = (function(){
 			"area": "Nanomanufacturing",
 			"type": "POSTER",
 			"title": "Hardwired for success: Ni supported CeO2:Sm2O3 nanowires as a super stable catalyst for ethanol steam reforming",
-			"authors": "Thenner Silva Rodrigues;Arthur Brucoli Leme de Moura;Felipe Anchieta;Eduardo G. Candido",
+			"authors": "Thenner Silva Rodrigues;Arthur Brucoli Leme de Moura;Felipe A. e Silva;Eduardo G. Candido",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/13mhHrtYbUvi4-OXeRFyedWyjupUVmVIB/view?usp=drivesdk"
 		},*/
@@ -2386,7 +2386,7 @@ var data = (function(){
 			"area": "Biological-nano Interactions",
 			"type": "POSTER",
 			"title": "Highly Crystalline Zinc Oxide Nanoparticles for Photodegradation of Acetaminophen in a Micro-packed Bed Reactor",
-			"authors": "Fabiane J. Trindade;Bruno Ramos;Sergio Brochsztain;Eduardo R. Triboni;Tayro Stringari;Ardson S. Vianna Junior;Antonio Carlos S. C. Teixeira",
+			"authors": "Fabiane J. Trindade;Bruno Ramos;Sergio Brochsztain;Eduardo R. Triboni;Tayro Stringari;Ardson S. Vianna Junior;Antonio Carlos Silva Costa Teixeira",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1QEObB0ndJ4AL38ccNNr1qX1BpZTB3gie/view"
 		},
@@ -2395,7 +2395,7 @@ var data = (function(){
 			"area": "Biological-nano Interactions",
 			"type": "POSTER",
 			"title": "Association of Botanical Compounds from Different Plants with Nanotechnology as a Promising System Aiming Pest Control",
-			"authors": "Jhones L. de Oliveira;Estefania V.R. Campos;Tais Germano da Costa;Renata Lima;Jaqueline Franciosi Della Vechia;Sidneia Terezinha Soares;Daniel Junior de Andrade;Kelly Cristina Gonçalves;Ricardo Antonio Polanczyk;Leonardo Fernandes Fraceto",
+			"authors": "Jhones Luiz de Oliveira;Estefania Vangelie Ramos Campos;Tais Germano da Costa;Renata Lima;Jaqueline Franciosi Della Vechia;Sidneia Terezinha Soares;Daniel Junior de Andrade;Kelly Cristina Gonçalves;Ricardo Antonio Polanczyk;Leonardo Fernandes Fraceto",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1P-KpgCrwS3wWkdje0YR1p2O6LSTlJjeY/view"
 		}
