@@ -2233,7 +2233,7 @@ var data = (function(){
 			"area": "Chemical-nano interactions",
 			"type": "ORAL",
 			"title": "Development of multifunctional nanocomposite coating for indirect potable reuse water treatment",
-			"authors": "Pasan Chinthana Bandara;Debora Rodrigues;Enrico Nadres",
+			"authors": "Pasan Chinthana Bandara;Debora Frigi Rodrigues;Enrico Nadres",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1-5KObruyixPnkFhzAnHVn4Ggu8HKcrt1/view?usp=drivesdk"
 		},
@@ -2296,7 +2296,7 @@ var data = (function(){
 			"area": "Nanomanufacturing",
 			"type": "POSTER",
 			"title": "Biodegradable polymer blends reinforced with bio-hydroxyapatite nanoparticle - preparation and characterization",
-			"authors": "Pedro Rodrigo Reis;Julyana Galvão Santana;Rene R. Oliveira;Vijaya k. Rangari;Esperidiana A. B. Moura",
+			"authors": "Pedro Rodrigo Reis;Julyana Galvão Santana;Rene R. Oliveira;Vijaya K. Rangari;Esperidiana A. B. Moura",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1EnRj9iv_pPk1RgChD_chqNwEY2zeBlzc/view"
 		},
@@ -2314,7 +2314,7 @@ var data = (function(){
 			"area": "Biological-nano Interactions",
 			"type": "POSTER",
 			"title": "Poloxamer hydrogel containing polymeric nanocapsules: an in vitro skin-membrane permeation study",
-			"authors": "Renato Grillo;Fabiana Vieira DIas;Samyr Machado Querobino;Carlos Alberto-Silva;Leonardo Fernandes Fraceto;Eneida de Paula;Daniele Ribeiro de Araujo",
+			"authors": "Renato Grillo;Fabiana Vieira Dias;Samyr Machado Querobino;Carlos Alberto-Silva;Leonardo Fernandes Fraceto;Eneida de Paula;Daniele Ribeiro de Araujo",
 			"template": 0,
 			"link": "https://drive.google.com/file/d/1qpm9puqWEr2jRunjpdCozwkH2FGvYt2t/view"
 		},
