@@ -16,13 +16,15 @@ header {
 
 header.scroll {
     height: 200px;
+    background-size: 100%;
+    background-position-y: 70%;
 }
 
 .fundo-logo {
-    background-image: url('img/background-1.jpg');
+    background-image: url('img/background-6.jpg');
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 main {  
@@ -66,4 +68,27 @@ div.tab-content {
 
 div.flex-row {
     height: 100%;
+}
+
+
+@media only screen and (max-width: 900px) {
+    header.fundo-logo {
+        background-image: url('img/background-mobile.png');
+        background-size: cover;
+    }
+
+    header.scroll {
+        height: 200px;
+        background-size: 100%;
+        background-position-y: 35%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    header.fundo-logo {
+        background-image: url('img/background-mobile.png');
+        background-size: auto;
+    }
+
 }
