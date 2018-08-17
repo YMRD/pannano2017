@@ -21,7 +21,7 @@ header.scroll {
 }
 
 .fundo-logo {
-    background-image: url('img/background-6.jpg');
+    background-image: url('img/background.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 100%;
@@ -40,14 +40,13 @@ section {
 
 #navigator {
     align-self: flex-end;
-    margin-right: 8px;
 }
 
 section.event {
     flex-wrap: wrap;
 }
 
-section.event > * {
+section.event > div {
     flex: 1 0 250px;
 }
 
@@ -70,6 +69,11 @@ div.flex-row {
     height: 100%;
 }
 
+p.isbn {
+    width: 100%;
+    text-align: right;
+}
+
 
 @media only screen and (max-width: 900px) {
     header.fundo-logo {
@@ -84,11 +88,18 @@ div.flex-row {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
 
     header.fundo-logo {
         background-image: url('img/background-mobile.png');
         background-size: auto;
+    }
+
+    #navigator {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1030;
     }
 
 }

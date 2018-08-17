@@ -1,0 +1,11 @@
+section.front-page {
+    height: 600px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section.front-page ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
